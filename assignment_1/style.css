@@ -52,7 +52,7 @@
 }
 
 .font{
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 @media (max-width: 1000px){
@@ -68,12 +68,18 @@
     }
 
     .body-img{
-        max-height: 150px;
+        max-width: 50%;
     }
 
     .des{
-        max-width: 150px;
+        max-width: 200px;
         border: 2px solid;
     }
 
+}
+
+@media (max-width: 960px){
+    .left{
+        border: blue 5px dotted;
+    }
 }
