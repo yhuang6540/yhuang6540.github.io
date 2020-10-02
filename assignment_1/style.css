@@ -4,7 +4,7 @@
     justify-content: space-between;
     background-color:red;
     padding: 5px;
-    margin-bottom: 15px;
+   
     align-items: center;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .content{
+    margin-top: 15px;
     max-width: 960px;
     display: flex;
     border: blue 5px solid;
@@ -33,6 +34,7 @@
 .left{
     flex: 1;
     margin-right: 20px;
+    
     border: purple 5px solid;
 }
 
@@ -43,9 +45,14 @@
 }
 
 .right{
+    background-color: wheat;
     justify-content: center;
     border: green 1px solid;
     flex: 3;
+}
+
+.font{
+    font-family: 'Press Start 2P', cursive;
 }
 
 @media (max-width: 1000px){
@@ -61,7 +68,7 @@
     }
 
     .body-img{
-        max-width: 150px;
+        max-height: 150px;
     }
 
     .des{
