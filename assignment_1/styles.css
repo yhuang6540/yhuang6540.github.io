@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b34b3;
+  padding: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Balsamiq Sans", cursive;
+  color: #ffd040;
+  font-size: 30px;
+}
+
+.header-img {
+  max-height: 150px;
+}
+
+.wrapper {
+  background-color: #4061ff;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 960px;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.body-img {
+  max-width: 100%;
+  background-color: #faeec5;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.des-box {
+  padding-left: 10px;
+  background-color: #faeec5;
+}
+
+.right {
+  padding: 5px;
+  background-color: #faeec5;
+  justify-content: center;
+  flex: 3;
+}
+
+.header-font {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 30px;
+}
+
+.role-font {
+  margin-top: 20px;
+  font-family: "Balsamiq Sans", cursive;
+  font-style: italic;
+}
+
+.body-font {
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    display: block;
+  }
+  .left {
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .right {
+    margin-top: 15px;
+  }
+
+  .des-box {
+    max-width: 30%;
+    height: min-content;
+  }
+}
