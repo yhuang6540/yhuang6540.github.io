@@ -22,6 +22,8 @@
     display: flex;
     justify-content: center;
     border: black 5px solid;
+    height: 100%;
+    object-fit: contain;
 }
 
 .content{
@@ -29,6 +31,7 @@
     max-width: 960px;
     display: flex;
     border: blue 5px solid;
+    
 }
 
 .left{
@@ -44,7 +47,7 @@
 }
 
 .right{
-    background-color: wheat;
+    background-color:wheat;
     justify-content: center;
     border: green 1px solid;
     flex: 3;
@@ -54,7 +57,15 @@
     font-family: 'Balsamiq Sans', cursive;
 }
 
+.des{
+    background-color: wheat;
+}
+
 @media (max-width: 1000px){
+    .wrapper{
+        height: 100%;
+        object-fit: contain;
+    }
     .content{
         display: block;
     }
