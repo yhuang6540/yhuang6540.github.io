@@ -5,7 +5,7 @@
   padding: 5px;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Audiowide", cursive;
   color: #ffd040;
   font-size: 30px;
 }
@@ -52,13 +52,13 @@
 }
 
 .header-font {
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Audiowide", cursive;
   font-size: 30px;
 }
 
 .role-font {
   margin-top: 20px;
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Audiowide", cursive;
   font-style: italic;
   font-weight: bolder;
 }
