@@ -56,7 +56,9 @@
 }
 
 @media (max-width: 1000px){
-
+    .wrapper{
+        height: 100%;
+    }
     .content{
         display: block;
     }
@@ -68,11 +70,12 @@
     }
 
     .body-img{
-        max-width: 50%;
+        max-width: 30%;
+        height: auto;
     }
 
     .des{
-        max-width: 200px;
+        max-width: 30%;
         border: 2px solid;
     }
 
@@ -80,6 +83,6 @@
 
 @media (max-width: 960px){
     .left{
-        border: blue 5px dotted;
+        border: blue 5px dashed;
     }
 }
