@@ -64,13 +64,13 @@
         justify-content: space-evenly;
         border: red 5px dotted;
     }
-
+/*
     .body-img{
-        max-width: 30%;
+        max-width: 50px;
         width: auto;
         height: auto;
     }
-/*
+
     .des{
         max-width: 30%;
         border: 2px solid;
