@@ -56,9 +56,6 @@
 }
 
 @media (max-width: 1000px){
-    .wrapper{
-        height: 100%;
-    }
     .content{
         display: block;
     }
@@ -71,7 +68,6 @@
 
     .body-img{
         max-width: 30%;
-        height: auto;
     }
 
     .des{
