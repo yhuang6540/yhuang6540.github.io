@@ -42,8 +42,6 @@
 }
 
 .body-img{
-    max-width: 100%;
-    max-height: 100%;
     border: 1px solid;
     border-radius: 5px;
 }
@@ -82,22 +80,21 @@
         border: red 5px dotted;
     }
     .right{
+        
         margin-top: 15px;
         border: 3px solid;
+        
     }
-
+/*
     .body-img{
-        max-width: 30%;
-        max-height: 30%;
-        border: 1px solid;
-        border-radius: 5px;
-        object-fit: contain;
+        flex: 1;
     }
-
+*/
     .des{
         padding: 5px;
-        max-width: 35%;
+        max-width: 30%;
         height: min-content;
+        flex: 3;
     }
 
 }
