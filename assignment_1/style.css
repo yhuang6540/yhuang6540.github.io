@@ -41,7 +41,6 @@
 .body-img{
     border: 1px solid;
     border-radius: 5px;
-    max-width:100%;
 }
 
 .right{
@@ -65,7 +64,7 @@
         justify-content: space-evenly;
         border: red 5px dotted;
     }
-
+/*
     .body-img{
         display: flex;
         max-width: 30%;
@@ -75,7 +74,7 @@
         max-width: 30%;
         border: 2px solid;
     }
-
+*/
 }
 
 @media (max-width: 960px){
