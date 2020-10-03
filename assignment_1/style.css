@@ -67,6 +67,7 @@
     }
 
     .body-img{
+        display: flex;
         max-width: 30%;
     }
 
