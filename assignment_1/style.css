@@ -22,12 +22,12 @@
     display: flex;
     justify-content: center;
     border: black 5px solid;
-    height: 100%;
     object-fit: contain;
+    padding: 15px;
+    min-height: 100vh;
 }
 
 .content{
-    margin-top: 15px;
     max-width: 960px;
     display: flex;
     border: blue 5px solid;
@@ -63,11 +63,15 @@
 
 @media (max-width: 1000px){
     .wrapper{
-        height: 100%;
-        object-fit: contain;
+        /*flex-direction: column;*/
+        
     }
     .content{
+        border: green 5px solid;
         display: block;
+        
+        /*flex-direction: column;*/
+
     }
     .left{
         margin-right: 0px;
@@ -75,22 +79,22 @@
         justify-content: space-evenly;
         border: red 5px dotted;
     }
-/*
+    .right{
+        margin-top: 15px;
+        border: 3px solid;
+    }
+
     .body-img{
-        max-width: 50px;
-        width: auto;
-        height: auto;
+        max-width: 30%;
+        max-height: 30%;
+        object-fit: contain;
     }
 
     .des{
-        max-width: 30%;
-        border: 2px solid;
+        padding: 5px;
+        max-width: 35%;
+        height: min-content;
     }
-*/
+
 }
 
-@media (max-width: 960px){
-    .left{
-        border: blue 5px dashed;
-    }
-}
