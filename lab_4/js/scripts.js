@@ -28,8 +28,10 @@ secondPar.innerText += "\n";
 secondPar.innerText += myFullName.slice(myFullName.length-3);
 
 // 8 Substring your first and last name into two separate variables
-let firstName = myFullName.slice(0, myFullName.indexOf(' '));
-let lastName = myFullName.slice(myFullName.indexOf(' ')+1);
+let firstName = myFullName.slice(0, 6);
+let lastName = myFullName.slice(7);
+//let firstName = myFullName.slice(0, myFullName.indexOf(' '));
+//let lastName = myFullName.slice(myFullName.indexOf(' ')+1);
 
 // 9 Add the total length of your first and last names together
 let total = firstName.length + lastName.length;
