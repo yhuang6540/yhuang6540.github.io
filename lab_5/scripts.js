@@ -303,7 +303,7 @@ function indexlist(){
 		if(!(indexlist.includes(index))){
 			indexlist.push(index);
 		}
-	}while(indexlist.length != 25);
+	}while(indexlist.length < 25);
 	return indexlist;
 }
 /*
@@ -332,11 +332,37 @@ let x1 = [];
 	document.querySelector('.content').append(countrylist);
 
 	let x = indexlist();
-	x.forEach(iterate);
+	const l1 = [];
+	let l2 = [];
+	x.forEach(add);
+
+	
 
 
+/*
+	let notSelect = [];
+	for(i=0; i<countries.length; i++){
+		if(!(x.includes(i))){
+			notSelect.push(countries[i]);
+		}
+	}
+	console.log(notSelect);
+*/
  }
 
+function add(item){
+	l1.push(countries[item]);
+}
+
+let ar1 = ["d", "c","b","a"];
+let ar2 = ["2", "3", "4", "1"];
+let ar3 = [];
+ar3[0] = ar1;
+ar3[1] = ar2;
+
+ar3[0].sort();
+ar3[1].sort();
+ /*
  function iterate(item) {
 	let listItem = document.createElement('li');
 	listItem.innerHTML = countries[item] + ", " + countryCode[item].bold();
@@ -345,7 +371,7 @@ let x1 = [];
     //x1.push(countryCode[item]);
 }
 
-
+*/
 
 
 /*
