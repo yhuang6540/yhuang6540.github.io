@@ -332,14 +332,8 @@ let x1 = [];
 	document.querySelector('.content').append(countrylist);
 
 	let x = indexlist();
-	const l1 = [];
-	let l2 = [];
-	x.forEach(add);
+	x.forEach(iterate);
 
-	
-
-
-/*
 	let notSelect = [];
 	for(i=0; i<countries.length; i++){
 		if(!(x.includes(i))){
@@ -347,22 +341,9 @@ let x1 = [];
 		}
 	}
 	console.log(notSelect);
-*/
+	
  }
 
-function add(item){
-	l1.push(countries[item]);
-}
-
-let ar1 = ["d", "c","b","a"];
-let ar2 = ["2", "3", "4", "1"];
-let ar3 = [];
-ar3[0] = ar1;
-ar3[1] = ar2;
-
-ar3[0].sort();
-ar3[1].sort();
- /*
  function iterate(item) {
 	let listItem = document.createElement('li');
 	listItem.innerHTML = countries[item] + ", " + countryCode[item].bold();
@@ -371,7 +352,7 @@ ar3[1].sort();
     //x1.push(countryCode[item]);
 }
 
-*/
+
 
 
 /*
