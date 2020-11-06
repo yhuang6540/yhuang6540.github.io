@@ -14,6 +14,7 @@ if(!(name == "undefined" || name == null)){
     document.getElementById('name').innerText = name;
     document.getElementById('semester').innerText = semester;
     document.getElementById('credits').innerText = credits;
+    //sessionStorage.clear();
 }
 
 //to clear the saving and content when go back to home page
