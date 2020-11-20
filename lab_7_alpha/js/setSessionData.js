@@ -42,10 +42,10 @@ function getClasses(){
             sessionStorage.setItem("lName", data.data.last_name);
             sessionStorage.setItem("email", data.data.email);
 
-            console.log(data);
-            console.log(data.data);
-            console.log(data.data.id);
-            console.log(data.data.email);
+            console.log('data: ' + data);
+            console.log('data.data: ' + data.data);
+            console.log('data.data.id: ' + data.data.id);
+            console.log('data.data.email: ' + data.data.email);
         })
         .catch((error) => main.innerHTML = "Invalid input. Try again.")
     }
