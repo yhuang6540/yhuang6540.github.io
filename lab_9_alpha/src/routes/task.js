@@ -51,6 +51,24 @@ router.get('/task', (req, res) => {
       });
 })
 
+/***************Get all tasks************************/
+router.get("/tasks", (req, res) => {
+    var sql = "select * from tasklist"
+    var params = []
+    db.all(sql, params, (err, rows) => {
+        if (err) {
+          res.status(400).json({"error":err.message});
+          return;
+        }
+        res.json({
+            "message":"success",
+            "data":rows
+        })
+      });
+    }
+    );
+/***************************************/
+
 //Update
 router.put('/task', (req, res) => {
     console.log("PUT called")

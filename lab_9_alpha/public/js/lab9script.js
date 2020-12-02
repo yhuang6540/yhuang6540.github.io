@@ -2,6 +2,9 @@
 //    let taskForm = document.getElementById("postTaskForm");
 //    taskForm.submit();
 //}
+
+const currentURL = window.location.href;
+
 function submitTask() {
   console.log("Called submitTask");
   
@@ -12,7 +15,7 @@ function submitTask() {
   data = {'taskDueDate':taskDueDate, 'taskName':taskNameParam};
 
   console.log(JSON.stringify(data))
-  let taskURL = "http://localhost:4000/task";
+  let taskURL = currentURL + "task";
   const fetchPromise = fetch(taskURL,{ method:'POST', headers: {
       'Content-Type': 'application/json'
       // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -47,7 +50,7 @@ function getTask() {
     
     let taskIdParam = document.getElementById("taskId").value;
     console.log("TaskId:" + taskIdParam);
-    let taskURL = "http://localhost:4000/task?taskId=" + taskIdParam;
+    let taskURL = currentURL + "task?taskId=" + taskIdParam;
     const fetchPromise = fetch(taskURL);
 
     fetchPromise
@@ -84,7 +87,7 @@ function updateTask() {
   data = {'taskName':taskNameParam};
 
   console.log(JSON.stringify(data))
-  let taskURL = "http://localhost:4000/task?taskId=" + taskIdParam;
+  let taskURL = currentURL + "task?taskId=" + taskIdParam;
   const fetchPromise = fetch(taskURL,{ method:'PUT', headers: {
       'Content-Type': 'application/json'
       // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -120,7 +123,7 @@ function deleteTask() {
   let taskIdParam = document.getElementById("deleteTaskId").value;
   console.log("TaskId:" + taskIdParam);
   
-  let taskURL = "http://localhost:4000/task?taskId=" + taskIdParam;
+  let taskURL = currentURL + "task?taskId=" + taskIdParam;
   const fetchPromise = fetch(taskURL,{ method:'DELETE'});
 
   fetchPromise
