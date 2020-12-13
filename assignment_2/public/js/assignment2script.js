@@ -347,7 +347,7 @@ window.onload = async function loadPage() {
 }
 
 /*
--- Add New Group
+----- Add New Group -----
 */
 
 function submitNewGroup() {
@@ -392,3 +392,51 @@ function submitNewGroup() {
     });
 
 }
+
+/**************************
+------ Search Task ------
+**************************/
+
+//let url = "https://www.reddit.com/r/popular.json";
+//let url = "https://api.umd.io/v0/bus/routes";
+//let url = "/allPeople"; //local test
+let url = "/allTasks"
+const tasksArray = [];
+
+fetch(url)
+    .then(blob => blob.json())
+    .then(data => tasksArray.push(...data.data))
+
+function findMatches(wordToMatch, tasksArray){
+  return tasksArray.filter(mission => {
+    const regex = new RegExp(wordToMatch, 'gi');
+    return mission.taskName.match(regex)
+
+
+  });
+}
+
+function displayMatches(){
+  if(document.getElementById('searchTask').value != ""){
+  const matchArray = findMatches(this.value, tasksArray);
+  const html = matchArray.map(mission =>{
+    const regex = new RegExp(this.value, 'gi');
+    const missionName = mission.taskName.replace(regex, `<span class="highlight">${this.value}</span>`);
+    return `
+      <li>
+        <span class="mission">${missionName}</span>
+      </li>
+    `;
+  }).join('');
+  suggestions.innerHTML = html;
+  }
+  else{
+    suggestions.innerHTML = "";
+  }
+}
+
+const searchInput = document.getElementById('searchTask');
+const suggestions = document.querySelector('.suggestions');
+
+//searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
